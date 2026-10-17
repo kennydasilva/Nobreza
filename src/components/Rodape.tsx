@@ -45,7 +45,7 @@ export function Rodape() {
         <div className="flex flex-wrap justify-between gap-3 border-t border-creme/35 pt-5 text-mini">
           <span>© {new Date().getFullYear()} Ourivesaria Nobreza · <Link to="/a-loja" className="link-rodape">A loja</Link></span>
           <span>Preços e fotografias das publicações da loja. O preço pode variar com o peso final da peça.</span>
-          <span className="w-full tabular-nums">Designed by Tiva Tech · 850741012</span>
+          <span className="w-full text-center tabular-nums">Designed by Tiva Tech · 850741012</span>
         </div>
       </div>
     </footer>
