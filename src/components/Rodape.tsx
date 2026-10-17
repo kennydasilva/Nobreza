@@ -42,10 +42,11 @@ export function Rodape() {
             <a href={config.mapa} target="_blank" rel="noopener" className="link-rodape mt-2 inline-block text-label underline underline-offset-3">Abrir no mapa</a>
           </div>
         </div>
-        <div className="flex flex-wrap justify-between gap-3 border-t border-creme/35 pt-5 text-mini">
+        {/* Uma só linha no computador: direitos à esquerda, crédito ao centro, nota dos preços à direita. */}
+        <div className="grid gap-3 border-t border-creme/35 pt-5 text-mini lg:grid-cols-[1fr_auto_1fr] lg:items-center">
           <span>© {new Date().getFullYear()} Ourivesaria Nobreza · <Link to="/a-loja" className="link-rodape">A loja</Link></span>
-          <span>Preços e fotografias das publicações da loja. O preço pode variar com o peso final da peça.</span>
-          <span className="w-full text-center tabular-nums">Designed by Tiva Tech · 850741012</span>
+          <span className="tabular-nums lg:text-center">Designed by Tiva Tech · 850741012</span>
+          <span className="lg:text-right">Preços e fotografias das publicações da loja. O preço pode variar com o peso final da peça.</span>
         </div>
       </div>
     </footer>
