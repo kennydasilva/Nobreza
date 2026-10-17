@@ -29,12 +29,11 @@ export const DESTAQUES: Destaque[] = [
     ate: '2026-11-30',
   },
   {
-    titulo: 'Casais que confiaram na Nobreza.',
-    botao: 'Ver casais',
-    para: '/casais',
-    foto: { tipo: 'casal', nome: 'filipe-helena' },
-    alt: 'Filipe e Helena no dia do casamento',
-    posicao: '50% 25%',
+    titulo: 'Anéis em ouro rosé, amarelo e branco.',
+    botao: 'Ver anéis',
+    para: '/loja?categoria=aneis',
+    foto: { tipo: 'peca', nome: 'divino-an-n0073' },
+    alt: 'Anel Divino em ouro rosé com pedra oval',
   },
   {
     titulo: 'Do desenho 3D à sua mão.',
