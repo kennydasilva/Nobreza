@@ -208,6 +208,10 @@ rejeitou a letra Cormorant.
 | 2026-10-17 | "Sobre nós": vídeo do dono, fachada, joalheiro na bancada, comunidade/caridade, morada com "Abrir no mapa", horários "a confirmar". |
 | 2026-10-17 | Rodapé: logótipo, slogan, morada, três números, Instagram/Facebook/TikTok, links das categorias. |
 | 2026-10-17 | Criada a skill de utilizador `/anti-padrao-ia` (`~/.claude/skills/anti-padrao-ia`): modo "site do zero" e modo "melhorar existente", com aprovação antes do código. |
+| 2026-10-17 | Direção aprovada (protótipo v5: Gilda Display + Montserrat, texto dourado, magenta nas bandas fortes). Implementação começou. |
+| 2026-10-17 | Fotos das peças melhoradas com Real-ESRGAN (x4 → 1600 px); vídeos recodificados em 720p a partir dos originais. |
+| 2026-10-17 | Menos foco nos casais (pedido do utilizador): o carrossel tem um slide de anéis em vez de casais; na página inicial os casais vêm depois dos Anéis. |
+| 2026-10-17 | Secção do símbolo fala do slogan e da identidade ("Um anel, um diamante e o N de Nobreza."); o desenho segue o logótipo e não tem a linha por baixo do N. |
 
 ## 5. Em discussão (perguntas em aberto)
 
