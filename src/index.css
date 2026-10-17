@@ -570,87 +570,76 @@
     }
   }
 
-  /* O símbolo em grande (secção "um pedido e um sim") */
-  .anel-grande .traco {
+  /* O símbolo em grande, ao lado do slogan */
+  .anel-grande .aro {
     fill: none;
     stroke: var(--color-dourado);
-    stroke-linecap: round;
-    stroke-linejoin: round;
-  }
-  .anel-grande .traco path,
-  .anel-grande .traco--aro,
-  .anel-grande .traco--aro-fino,
-  .anel-grande .traco--risco {
+    stroke-width: 13;
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
   }
-  .anel-grande .traco--pedra {
-    stroke-width: 1.6;
+  .anel-grande .cheio {
+    fill: var(--color-dourado);
   }
-  .anel-grande .traco--aro {
-    stroke-width: 3;
+  .anel-grande .faceta {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1.1;
+    stroke-linejoin: round;
+    opacity: 0.85;
   }
-  .anel-grande .traco--aro-fino {
-    stroke-width: 0.8;
-    opacity: 0.7;
+  .anel-grande .pedra,
+  .anel-grande .letra,
+  .anel-grande .nome {
+    opacity: 0;
   }
-  .anel-grande .traco--risco {
-    stroke-width: 9;
+  .anel-grande .pedra {
+    transform: translateY(-8px);
   }
   .anel-grande .letra {
-    fill: var(--color-dourado);
-    font-family: var(--font-display);
-    opacity: 0;
+    transform: scale(0.96);
+    transform-origin: 120px 150px;
   }
   .anel-grande .nome {
     fill: var(--color-tinta);
     font-family: var(--font-texto);
     font-weight: 600;
-    opacity: 0;
   }
-  .anel-grande .reflexo rect {
-    transform: translateX(-60px) skewX(-18deg);
+  .anel-grande .reflexo {
+    transform: translateX(-40px) skewX(-18deg);
   }
-  .anel-grande.visto .traco--aro {
+  .anel-grande.visto .aro {
     animation: desenhar 1.6s var(--ease-saida) forwards;
   }
-  .anel-grande.visto .traco--aro-fino {
-    animation: desenhar 1.6s 0.15s var(--ease-saida) forwards;
-  }
-  .anel-grande.visto .traco--pedra path {
-    animation: desenhar 1.1s 0.7s var(--ease-saida) forwards;
-  }
-  .anel-grande.visto .traco--risco {
-    animation: desenhar 0.5s 1.4s var(--ease-saida) forwards;
+  .anel-grande.visto .pedra {
+    animation: assentar 0.9s 0.9s var(--ease-saida) forwards;
   }
   .anel-grande.visto .letra {
-    animation: aparecer 0.8s 1.1s var(--ease-saida) forwards;
+    animation: assentar 0.9s 0.6s var(--ease-saida) forwards;
   }
   .anel-grande.visto .nome {
-    animation: aparecer 0.8s 1.5s var(--ease-saida) forwards;
+    animation: aparecer 0.8s 1.3s var(--ease-saida) forwards;
   }
-  .anel-grande.visto .reflexo rect {
+  .anel-grande.visto .reflexo {
     animation: reflexo 5s 2.4s ease-in-out infinite;
   }
   @media (prefers-reduced-motion: reduce) {
-    .anel-grande .traco path,
-    .anel-grande .traco--aro,
-    .anel-grande .traco--aro-fino,
-    .anel-grande .traco--risco {
+    .anel-grande .aro {
       stroke-dasharray: none;
       stroke-dashoffset: 0;
       animation: none !important;
     }
+    .anel-grande .pedra,
     .anel-grande .letra,
     .anel-grande .nome {
       opacity: 1;
+      transform: none;
       animation: none !important;
     }
     .anel-grande .reflexo {
       display: none;
     }
   }
-
 }
 
 @keyframes desenhar {
@@ -693,10 +682,16 @@
 /* O reflexo passa pelo diamante em 0,8 s e descansa o resto do ciclo. */
 @keyframes reflexo {
   0% {
-    transform: translateX(-60px) skewX(-18deg);
+    transform: translateX(-40px) skewX(-18deg);
   }
   16%,
   100% {
-    transform: translateX(150px) skewX(-18deg);
+    transform: translateX(140px) skewX(-18deg);
+  }
+}
+@keyframes assentar {
+  to {
+    opacity: 1;
+    transform: none;
   }
 }
