@@ -133,6 +133,7 @@ rejeitou a letra Cormorant.
 - **Impeccable:** desenho e regras de UI/intuitividade (craft-floor, `impeccable detect`).
 - **anti-slop-design** (`.claude/skills/anti-slop-design`): filtro contra tudo o que soa a IA; correr `references/13-pre-emit-checklist.md` antes de entregar.
 - **grilling:** decisões em rondas com recomendação.
+- **/anti-padrao-ia:** fluxo completo (auditoria → direção → aprovação → implementação → auditoria final).
 - **/humanizar:** todos os textos do site.
 
 ### UI Pro Max (análise e inspiração)
@@ -199,6 +200,12 @@ rejeitou a letra Cormorant.
 | 2026-10-17 | Página "Peça por medida": vídeo 3D → mão, 4 passos, botão "Contar a minha ideia" → WhatsApp. |
 | 2026-10-17 | Cabeçalho: logótipo à esquerda; pesquisa, WhatsApp e menu à direita; sem botão de WhatsApp a flutuar. |
 | 2026-10-17 | Instalada a skill anti-slop-design em `.claude/skills/` (só texto, MIT) para garantir que nada tem ar de IA. |
+| 2026-10-17 | Carrossel automático com 4 regras: uma foto real por slide com frase curta; linha de progresso nos pontos; para ao tocar/arrastar e arrastar muda de slide; ~6 s por slide. |
+| 2026-10-17 | Casais também numa grelha de álbum na página inicial (4–6 fotos visíveis, nomes em letra manuscrita) + "Ver todos os casais". |
+| 2026-10-17 | Movimento só com significado: logótipo a desenhar-se, carrossel, vídeo do atelier quando visível, resposta curta ao tocar. Nada de "aparecer ao fazer scroll". |
+| 2026-10-17 | "Sobre nós": vídeo do dono, fachada, joalheiro na bancada, comunidade/caridade, morada com "Abrir no mapa", horários "a confirmar". |
+| 2026-10-17 | Rodapé: logótipo, slogan, morada, três números, Instagram/Facebook/TikTok, links das categorias. |
+| 2026-10-17 | Criada a skill de utilizador `/anti-padrao-ia` (`~/.claude/skills/anti-padrao-ia`): modo "site do zero" e modo "melhorar existente", com aprovação antes do código. |
 
 ## 5. Em discussão (perguntas em aberto)
 
