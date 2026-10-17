@@ -90,6 +90,32 @@ Ourivesaria Nobreza. Serve para retomar o trabalho em qualquer sessão nova.
 - Contactos na faixa: +258 844 980 490, +258 870 913 234, WhatsApp +258 862 070 869;
   TikTok e Facebook "ourivesaria nobreza", Instagram @ourivesarianobreza.
 
+### Segunda transferência (2026-10-17)
+
+O utilizador apagou os ficheiros vazios e voltou a transferir. Na raiz de `imagens/`
+há agora 78 fotos + 8 vídeos, todos válidos. Ainda faltam mais (o utilizador envia depois).
+
+- **Fotos de produto em quadrado 1170×1170** (66 ficheiros): melhor qualidade que
+  as das subpastas. Mesma faixa magenta com preço/modelo/ref./peso em baixo.
+  Inclui alianças até 135.500 MZN, conjunto 110.100 MZN, colar 177.500 MZN.
+  As alianças dizem "o par".
+- **Promoções/publicidade** (stories 750×1334): "Diga sim! 10% de desconto em todos
+  os artigos" (maio; 20 jul–20 ago; novembro), com modelo sorridente e alianças.
+- **Serviço real:** "Oferecemos a possibilidade de ajustar mahala as alianças antes
+  da cerimónia do casamento. Tempo médio de espera: 20 minutos. Exclusivo para
+  clientes da Ourivesaria Nobreza." Também "Garantia e confiança" num cartão.
+- **Vídeos (8):**
+  - Anel Medicina pedra esmeralda — vídeo de produto em fundo preto, 12 s, elegante.
+  - **Fabrico de um anel** — desenho 3D (CAD azul) → modelo em cera/resina →
+    peça em bruto → anel acabado na mão, 9 s ("Anel Cavalheiro"). É o "como nasce um anel".
+  - Soldadura com maçarico → anel de nó acabado sobre flores, 15 s.
+  - Alianças num estojo, 7 s.
+  - O joalheiro na bancada com o cão (oficina com o "N" na parede), 6 s.
+  - O dono a falar: na loja (vitrines brancas) e à porta da loja (fachada
+    "OURIVESARIA NOBREZA"), 75–80 s; fecha com animação do logótipo em linha
+    branca sobre magenta.
+  - "Pega visão" — sketch humorístico do dono ao escritório, 51 s.
+
 ### Referência: projeto MADEY
 
 `/home/kenny/Development/Frontend/Project/react/MADEY` — inspiração de lógica e
@@ -137,6 +163,8 @@ rejeitou a letra Cormorant.
 | 2026-10-17 | Sem pedir autorizações à loja: é uma proposta para lhes mostrar. |
 | 2026-10-17 | `imagens/` e `identidadevisual/` ficam fora do git por enquanto. |
 | 2026-10-17 | UI Pro Max analisa, Impeccable desenha; sem sorteio de direções nem questionários de escolha múltipla. |
+| 2026-10-17 | O site terá um carrossel com eventos promocionais, publicidade e fotos de casais que confiaram na Nobreza (pedido do utilizador). Formato por definir. |
+| 2026-10-17 | Desenho com a skill de grilling (rondas de perguntas com recomendação); textos do site passam pelo /humanizar; nada com ar de IA. |
 
 ## 5. Em discussão (perguntas em aberto)
 
