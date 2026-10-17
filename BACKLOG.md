@@ -175,13 +175,20 @@ rejeitou a letra Cormorant.
 | 2026-10-17 | "Como nasce um anel" (vídeo 3D → molde → acabamento → mão) é a secção do atelier na página inicial; o vídeo só toca quando visível. |
 | 2026-10-17 | Ajuste grátis das alianças em ~20 min antes da cerimónia: destaque na categoria Alianças e em cada aliança. |
 | 2026-10-17 | Caridade numa página "Sobre nós", fora da página inicial. |
+| 2026-10-17 | Carrossel no topo da página inicial; primeiro slide com o slogan e as alianças; ~5 s por slide. |
+| 2026-10-17 | Ordem da página inicial: carrossel → categorias → alianças em destaque (com ajuste grátis) → "Como nasce um anel" → casais → mais peças → rodapé. |
+| 2026-10-17 | Páginas: Início · Loja (filtros) · Página de cada peça · Peça por medida · Sobre nós (loja, equipa, caridade, morada, mapa). |
+| 2026-10-17 | Filtros da loja: Categoria, Cor do ouro (rosé/amarelo/branco), Preço; ordenar por preço e novidades. |
+| 2026-10-17 | Botões "Pedir pelo WhatsApp" em magenta com o símbolo do WhatsApp. |
+| 2026-10-17 | Mensagem do WhatsApp: modelo, ref., preço, link; sem pedir tamanho no site. Número WhatsApp 86 207 0869. |
+| 2026-10-17 | Moeda escrita "MZN", como nas etiquetas da loja. |
 
 ## 5. Em discussão (perguntas em aberto)
 
 - [ ] Magenta: reservar a "momentos fortes" (preço, botão de pedido, nomes dos
       casais) ou mantê-lo tão presente como no Instagram?
 - [x] Relógios: ficam para depois.
-- [ ] Ordem da página inicial (ronda 2).
+- [x] Ordem da página inicial (ronda 2).
 - [x] Topo: o vídeo do atelier vai para "Como nasce um anel", só toca quando visível.
 - [x] Preço: sempre visível, com o peso.
 - [x] Primeira versão: as peças das quatro categorias que temos.
