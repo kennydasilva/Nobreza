@@ -66,14 +66,14 @@ export default function Inicio() {
         </div>
       </section>
 
-      {/* A loja em poucas linhas, ao lado do símbolo da Nobreza a desenhar-se (como o relógio do MADEY). */}
+      {/* A identidade da Nobreza em poucas linhas, ao lado do símbolo a desenhar-se (como o relógio do MADEY). */}
       <section className="seccao">
         <div className="wrap grid items-center gap-[clamp(40px,7vw,112px)] md:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)]">
           <div className="grid justify-items-start gap-6">
-            <h2 className="max-w-[16ch] text-seccao md:text-[clamp(2rem,1.4rem+2vw,3rem)]">A vida de um casal começa com um pedido e um sim.</h2>
-            <p className="max-w-[44ch] text-lg">Por isso o nosso símbolo é um anel. Fazemos alianças e anéis de noivado em Matola.</p>
-            <p className="max-w-[44ch] text-tinta-suave">Escolha a peça no site e toque em Pedir. O tamanho, o pagamento e a entrega combinamos consigo pelo WhatsApp.</p>
-            <Link className="ver mt-2" to="/loja?categoria=aliancas">Ver alianças <Seta /></Link>
+            <h2 className="max-w-[16ch] text-seccao md:text-[clamp(2rem,1.4rem+2vw,3rem)]">Um anel, um diamante e o N de Nobreza.</h2>
+            <p className="max-w-[44ch] text-lg">«O Ouro que mais conecta corações em Moçambique» é a nossa frase, e foi por ela que escolhemos um anel para símbolo.</p>
+            <p className="max-w-[44ch] text-tinta-suave">Produzimos e vendemos joias artesanais e em 3D, em Matola: anéis, alianças, colares e brincos em ouro rosé, amarelo e branco.</p>
+            <Link className="ver mt-2" to="/loja">Ver todas as peças <Seta /></Link>
           </div>
           <AnelLogotipo className="mx-auto w-full max-w-[280px] sm:max-w-[360px]" />
         </div>
@@ -101,6 +101,15 @@ export default function Inicio() {
         </div>
       </section>
 
+      <section className="seccao bg-rosa">
+        <div className="wrap">
+          <div className="topo-seccao">
+            <h2>Anéis</h2>
+            <Link className="ver" to="/loja?categoria=aneis">Ver todos <Seta /></Link>
+          </div>
+          <Grelha pecas={ANEIS} />
+        </div>
+      </section>
       <section className="seccao">
         <div className="wrap">
           <div className="topo-seccao">
@@ -118,15 +127,6 @@ export default function Inicio() {
         </div>
       </section>
 
-      <section className="seccao bg-rosa">
-        <div className="wrap">
-          <div className="topo-seccao">
-            <h2>Anéis</h2>
-            <Link className="ver" to="/loja?categoria=aneis">Ver todos <Seta /></Link>
-          </div>
-          <Grelha pecas={ANEIS} />
-        </div>
-      </section>
     </>
   )
 }
