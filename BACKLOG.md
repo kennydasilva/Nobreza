@@ -211,7 +211,7 @@ rejeitou a letra Cormorant.
 | 2026-10-17 | Direção aprovada (protótipo v5: Gilda Display + Montserrat, texto dourado, magenta nas bandas fortes). Implementação começou. |
 | 2026-10-17 | Fotos das peças melhoradas com Real-ESRGAN (x4 → 1600 px); vídeos recodificados em 720p a partir dos originais. |
 | 2026-10-17 | Menos foco nos casais (pedido do utilizador): o carrossel tem um slide de anéis em vez de casais; na página inicial os casais vêm depois dos Anéis. |
-| 2026-10-17 | Secção do símbolo fala do slogan e da identidade ("Um anel, um diamante e o N de Nobreza."); o desenho segue o logótipo e não tem a linha por baixo do N. |
+| 2026-10-17 | Secção do símbolo fala do slogan e da identidade ("Um anel, um diamante e o N de Nobreza."); o desenho em linha (aro, diamante, N e nome em arco) fica como estava, só sem o traço tipo ponteiro por baixo do N; o redesenho "cheio" foi recusado. |
 
 ## 5. Em discussão (perguntas em aberto)
 
