@@ -20,7 +20,7 @@ export function Pesquisa({ aoEscolher }: { aoEscolher: () => void }) {
 
   return (
     <div className="grid gap-4">
-      <label htmlFor="pesquisa" className="font-display text-titulo text-titulo">
+      <label htmlFor="pesquisa" className="font-display text-seccao text-titulo">
         Procurar peças
       </label>
       <input

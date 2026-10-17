@@ -48,7 +48,7 @@ export default function ALoja() {
       <section className="seccao">
         <div className="wrap grid items-center gap-10 md:grid-cols-2">
           <div className="grid gap-4">
-            <h2 className="text-titulo">A bancada</h2>
+            <h2 className="text-seccao">A bancada</h2>
             <p className="max-w-[40ch]">Cada peça passa pela bancada da oficina, na própria loja. O cão também.</p>
           </div>
           <VideoVisivel nome="bancada" rotulo="O joalheiro na bancada com o cão da loja" className="aspect-9/16 w-full max-w-[320px] justify-self-center" />

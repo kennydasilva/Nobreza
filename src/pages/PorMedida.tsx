@@ -52,7 +52,7 @@ export default function PorMedida() {
         <div className="wrap grid items-center gap-10 md:grid-cols-2">
           <VideoVisivel nome="soldadura" rotulo="O joalheiro a soldar um anel com o maçarico" className="mx-auto aspect-9/16 w-full max-w-[320px]" />
           <div className="grid justify-items-start gap-5">
-            <h2 className="text-titulo">Ouro rosé, amarelo ou branco.</h2>
+            <h2 className="text-seccao">Ouro rosé, amarelo ou branco.</h2>
             <p className="max-w-[40ch]">Escolha a cor do ouro e a pedra. Se forem alianças, ajustamos de graça antes da cerimónia.</p>
             {pedir}
           </div>

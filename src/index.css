@@ -27,7 +27,7 @@
   --text-mini: 0.75rem;
   --text-label: 0.8125rem;
   --text-nome: 1.125rem;
-  --text-titulo: clamp(1.625rem, 1.2rem + 1.6vw, 2.375rem);
+  --text-seccao: clamp(1.625rem, 1.2rem + 1.6vw, 2.375rem);
   --text-hero: clamp(2rem, 1.3rem + 3vw, 3.5rem);
 
   --ease-saida: cubic-bezier(0.16, 1, 0.3, 1);
@@ -235,7 +235,7 @@
     margin-bottom: clamp(24px, 3vw, 36px);
   }
   .topo-seccao h2 {
-    font-size: var(--text-titulo);
+    font-size: var(--text-seccao);
   }
 
   /* Banda forte (atelier e rodapé): magenta com texto branco e creme. */

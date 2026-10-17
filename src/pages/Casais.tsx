@@ -19,7 +19,7 @@ export default function Casais() {
           ))}
         </div>
         <div className="mt-14 grid justify-items-center gap-3 text-center">
-          <h2 className="text-titulo">As vossas alianças</h2>
+          <h2 className="text-seccao">As vossas alianças</h2>
           <Link className="botao" to="/loja?categoria=aliancas">Ver alianças</Link>
         </div>
       </div>
