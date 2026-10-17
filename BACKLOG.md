@@ -11,7 +11,7 @@ Ourivesaria Nobreza. Serve para retomar o trabalho em qualquer sessão nova.
 ## Estado atual
 
 - **Fase:** protótipo da página inicial publicado, **à espera de aprovação**. Ainda não se escreve código do site.
-- **Protótipo:** https://claude.ai/artifact/ADFn7zEgAFtJocMrALYv4X (versão 3; privado, do utilizador). Fonte em `docs/prototipo/` (modelo + script; as imagens vêm de `imagens/`, fora do git).
+- **Protótipo:** https://claude.ai/artifact/ADFn7zEgAFtJocMrALYv4X (versão 4; privado, do utilizador). Fonte em `docs/prototipo/` (modelo + script; as imagens vêm de `imagens/`, fora do git).
 - **Próximo passo:** aprovar ou corrigir a direção (/anti-padrao-ia, Modo B passo 5); depois registar o contrato de direção e construir.
 - **Repositório:** só tem `README.md`, `.gitignore` e este ficheiro. Dois commits
   locais por enviar; o push para o `main` aguarda confirmação.
@@ -194,7 +194,7 @@ rejeitou a letra Cormorant.
 | 2026-10-17 | Moeda escrita "MZN", como nas etiquetas da loja. |
 | 2026-10-17 | Cores: fundo branco, secções em rosa muito claro; magenta só em preços e botões de pedido; dourado no logótipo e pequenos detalhes. |
 | 2026-10-17 | Letras: ~~Bodoni Moda~~ → **Gilda Display** (títulos) + Jost (texto) + Great Vibes só nos nomes dos casais. |
-| 2026-10-17 | Texto em dourado (não preto): títulos #6E5215, texto #7D5F1A, secundário #7A6040. Fundo escuro: vinho #5C0A33 em vez de ameixa. |
+| 2026-10-17 | Texto em dourado (não preto): títulos #6E5215, texto #7D5F1A, secundário #7A6040. Bandas fortes (atelier e rodapé): magenta #D6006F com texto branco/creme #FFF4D6. |
 | 2026-10-17 | Logótipo redesenhado em SVG igual ao original (o ficheiro tem 150 px); trocar pelos originais quando a loja aceitar. |
 | 2026-10-17 | Animação: o anel do logótipo desenha-se uma vez ao abrir o site (< 1 s), sem ecrã de carregamento. |
 | 2026-10-17 | Cartão de peça: tocar na foto abre a página da peça; botão magenta "Pedir" abre o WhatsApp. |
@@ -257,7 +257,7 @@ O dourado do logótipo (o anel) como fio condutor entre secções.
 
 - O utilizador achou a Bodoni Moda "muito estranha" → títulos em **Gilda Display** (comparada com Marcellus, Libre Caslon Display e Bodoni; a UI Pro Max só propôs Playfair/Cormorant, já excluídas).
 - "O texto preto deve ser dourado": títulos #6E5215 (7,3:1), texto #7D5F1A (6:1), texto secundário #7A6040; contraste AA em branco e rosa-pó.
-- A cor ameixa do rodapé foi achada feia → **vinho #5C0A33** (o magenta da marca escurecido), com texto dourado-claro #E2CD8A (8,6:1). Usado no atelier e no rodapé.
+- A cor ameixa do rodapé foi achada feia → vinho #5C0A33 → também recusado ("ainda acho feia") → **magenta das etiquetas #D6006F** no rodapé e na banda do atelier. Texto em branco (5,1:1) e creme #FFF4D6 (4,7:1); o dourado-claro não passa em magenta (3,3:1), por isso fica só em decoração.
 
 ### 2026-10-17 (protótipo)
 
