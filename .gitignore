@@ -25,3 +25,6 @@ Thumbs.db
 # Material de referência da loja (por enquanto fora do repositório)
 imagens/
 identidadevisual/
+
+# Python
+__pycache__/
