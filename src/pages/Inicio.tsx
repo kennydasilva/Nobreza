@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { AnelLogotipo } from '../components/AnelLogotipo'
 import { Carrossel } from '../components/Carrossel'
 import { Grelha } from '../components/CartaoPeca'
 import { Foto } from '../components/Foto'
@@ -62,6 +63,19 @@ export default function Inicio() {
           </div>
           <Grelha pecas={ALIANCAS} />
           <p className="mt-7 text-mini text-tinta-suave">O preço pode variar com o peso final da peça.</p>
+        </div>
+      </section>
+
+      {/* A loja em poucas linhas, ao lado do símbolo da Nobreza a desenhar-se (como o relógio do MADEY). */}
+      <section className="seccao">
+        <div className="wrap grid items-center gap-[clamp(40px,7vw,112px)] md:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)]">
+          <div className="grid justify-items-start gap-6">
+            <h2 className="max-w-[16ch] text-seccao md:text-[clamp(2rem,1.4rem+2vw,3rem)]">A vida de um casal começa com um pedido e um sim.</h2>
+            <p className="max-w-[44ch] text-lg">Por isso o nosso símbolo é um anel. Fazemos alianças e anéis de noivado em Matola.</p>
+            <p className="max-w-[44ch] text-tinta-suave">Escolha a peça no site e toque em Pedir. O tamanho, o pagamento e a entrega combinamos consigo pelo WhatsApp.</p>
+            <Link className="ver mt-2" to="/loja?categoria=aliancas">Ver alianças <Seta /></Link>
+          </div>
+          <AnelLogotipo className="mx-auto w-full max-w-[280px] sm:max-w-[360px]" />
         </div>
       </section>
 
