@@ -65,6 +65,31 @@ Ourivesaria Nobreza. Serve para retomar o trabalho em qualquer sessão nova.
 - Antes de usar: dar nomes simples aos ficheiros, comprimir vídeos, converter
   imagens (WebP) e decidir o que entra no git.
 
+### Conteúdo real da pasta `imagens/` (visto 2026-10-17)
+
+- **Os 89 ficheiros na raiz estão vazios** (2 bytes): transferências falhadas. Entre
+  eles estavam os vídeos de fabrico e publicitários (ex.: "Anel Cavalheiro",
+  "Já se perguntou porque a Ourivesaria Nobreza trabalha…"). Hoje **não temos esses vídeos**.
+- Subpastas com material válido (as pastas `*_files` dentro de `aneis/` e
+  `caridade/` são lixo de páginas web guardadas):
+  - `aneis/` 27 fotos · `aliancas/` 22 · `colares/` 13 · `brincos/` 10 + 1 vídeo ·
+    `casamentos/` 24 · `caridade/` 1 foto + 4 vídeos.
+- **Fotos de produto:** formato story 640×1137. A fotografia útil é o quadrado do
+  meio (~640×630); por baixo há uma faixa impressa com **preço em MZN, Modelo,
+  Ref. e Peso aprox.** (ex.: Coroa oval, AN-N040, 1,7 g, 14.400 MZN) e os contactos.
+  Marca de água "Ourivesaria Nobreza" no centro, logótipo no canto.
+  → Dá para montar o catálogo com dados reais (≈70 peças). Preços vistos:
+  8.800–90.600 MZN. A resolução (640 px) chega para cartões, é fraca para fundos grandes.
+- Material: sobretudo **ouro rosé**, também amarelo e branco. Fundos com rosas,
+  flores, seda; colares em bustos de veludo vermelho, verde e preto.
+- **Casamentos:** stories com casais reais e os nomes em letra manuscrita
+  (Filipe & Helena, Carlos & Sandra, José & Feodósia…), molduras coral/vermelhas.
+  **Slogan da marca:** "O Ouro que mais conecta corações em Moçambique."
+- **Caridade:** a equipa a distribuir comida; fachada da loja com letreiro
+  "OURIVESARIA NOBREZA".
+- Contactos na faixa: +258 844 980 490, +258 870 913 234, WhatsApp +258 862 070 869;
+  TikTok e Facebook "ourivesaria nobreza", Instagram @ourivesarianobreza.
+
 ### Referência: projeto MADEY
 
 `/home/kenny/Development/Frontend/Project/react/MADEY` — inspiração de lógica e
