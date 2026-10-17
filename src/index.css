@@ -1,0 +1,606 @@
+@import 'tailwindcss';
+
+/*
+  Montra branca como a loja em Matola: a fotografia manda, o texto é dourado como o logótipo,
+  o magenta das etiquetas fica para o preço, o pedido e as bandas fortes (atelier e rodapé).
+  Tema único claro, por escolha da marca.
+*/
+@theme {
+  --color-branco: #ffffff;
+  --color-rosa: #fcf0f5;
+  --color-rosa-linha: #f1d6e3;
+  --color-magenta: #d6006f;
+  --color-magenta-escuro: #b0005b;
+  /* O magenta das publicações (3,8:1 com branco): só em áreas grandes, nunca em texto pequeno. */
+  --color-magenta-marca: #fe0084;
+  /* Dourado do logótipo (2,2:1): só em linhas e no anel. O texto usa os dourados escuros abaixo. */
+  --color-dourado: #c9ad51;
+  --color-titulo: #6e5215;
+  --color-tinta: #7d5f1a;
+  --color-tinta-suave: #7a6040;
+  --color-creme: #fff4d6;
+
+  --font-display: 'Gilda Display', 'Didot', Georgia, serif;
+  --font-texto: 'Montserrat', 'Century Gothic', system-ui, sans-serif;
+  --font-nomes: 'Great Vibes', 'Snell Roundhand', cursive;
+
+  --text-mini: 0.75rem;
+  --text-label: 0.8125rem;
+  --text-nome: 1.125rem;
+  --text-titulo: clamp(1.625rem, 1.2rem + 1.6vw, 2.375rem);
+  --text-hero: clamp(2rem, 1.3rem + 3vw, 3.5rem);
+
+  --ease-saida: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    scroll-padding-top: 80px;
+    scrollbar-color: var(--color-dourado) transparent;
+  }
+  body {
+    background: var(--color-branco);
+    color: var(--color-tinta);
+    font-family: var(--font-texto);
+    font-weight: 500;
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--color-titulo);
+    text-wrap: balance;
+  }
+  ::selection {
+    background: var(--color-magenta);
+    color: #fff;
+  }
+  :focus {
+    outline: none;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-magenta);
+    outline-offset: 3px;
+  }
+  .escuro :focus-visible {
+    outline-color: #fff;
+  }
+  button,
+  a {
+    cursor: pointer;
+    touch-action: manipulation;
+  }
+  input,
+  select {
+    accent-color: var(--color-magenta);
+    caret-color: var(--color-magenta);
+  }
+  img,
+  video {
+    max-width: 100%;
+    display: block;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      scroll-behavior: auto !important;
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .wrap {
+    max-width: 1240px;
+    margin-inline: auto;
+    padding-left: max(20px, env(safe-area-inset-left, 0px));
+    padding-right: max(20px, env(safe-area-inset-right, 0px));
+  }
+  .seccao {
+    padding-block: clamp(56px, 8vw, 104px);
+  }
+  .salto {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    z-index: 60;
+    padding: 10px 16px;
+    background: var(--color-magenta);
+    color: #fff;
+    transform: translateY(-200%);
+  }
+  .salto:focus-visible {
+    transform: none;
+  }
+
+  /* Botão principal: magenta cheio, cantos quase retos (a precisão de uma joia). */
+  .botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 48px;
+    padding: 0 26px;
+    background: var(--color-magenta);
+    color: #fff;
+    font-size: var(--text-mini);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: background 160ms;
+  }
+  .botao:hover {
+    background: var(--color-magenta-escuro);
+  }
+  .botao:active {
+    transform: translateY(1px);
+  }
+  .botao svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Pedido com contorno: o do cartão, para não competir com a etiqueta cheia. */
+  .pedir {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 40px;
+    padding: 0 12px;
+    color: var(--color-magenta);
+    font-weight: 600;
+    font-size: var(--text-mini);
+    box-shadow: inset 0 0 0 1px var(--color-magenta);
+    border-radius: 2px;
+    transition:
+      background 160ms,
+      color 160ms;
+  }
+  .pedir:hover {
+    background: var(--color-magenta);
+    color: #fff;
+  }
+  .pedir svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  /* "Ver todas": texto sublinhado com seta. */
+  .ver {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid currentColor;
+    font-size: var(--text-mini);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .ver svg {
+    width: 14px;
+    height: 14px;
+    transition: transform 160ms;
+  }
+  .ver:hover svg {
+    transform: translateX(3px);
+  }
+
+  /* A etiqueta de preço: a forma das etiquetas das publicações da loja. */
+  .etiqueta {
+    display: inline-grid;
+    justify-items: center;
+    padding: 6px 16px 8px;
+    background: var(--color-magenta);
+    color: #fff;
+    clip-path: polygon(0 0, 100% 0, 91% 100%, 9% 100%);
+    font-variant-numeric: tabular-nums;
+    line-height: 1.15;
+  }
+  .etiqueta strong {
+    font-weight: 700;
+    font-size: 0.9375rem;
+    letter-spacing: 0.01em;
+  }
+  .etiqueta small {
+    font-size: 0.625rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .etiqueta--grande {
+    padding: 10px 28px 12px;
+  }
+  .etiqueta--grande strong {
+    font-size: 1.5rem;
+  }
+  .etiqueta--grande small {
+    font-size: 0.75rem;
+  }
+
+  .topo-seccao {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: clamp(24px, 3vw, 36px);
+  }
+  .topo-seccao h2 {
+    font-size: var(--text-titulo);
+  }
+
+  /* Banda forte (atelier e rodapé): magenta com texto branco e creme. */
+  .escuro {
+    background: var(--color-magenta);
+    color: var(--color-creme);
+  }
+  .escuro h1,
+  .escuro h2,
+  .escuro h3 {
+    color: #fff;
+  }
+
+  .zoom img {
+    transition: transform 900ms var(--ease-saida);
+  }
+  .zoom:hover img {
+    transform: scale(1.035);
+  }
+
+  .campo {
+    min-height: 44px;
+    padding: 0 14px;
+    border: 1px solid var(--color-rosa-linha);
+    background: #fff;
+    color: var(--color-tinta);
+    border-radius: 2px;
+    font: inherit;
+  }
+  .campo:focus-visible {
+    outline-offset: 0;
+  }
+
+  /* Cabeçalho */
+  .cabecalho {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index: 40;
+    background: #fff;
+    border-bottom: 1px solid var(--color-rosa-linha);
+  }
+  @media (max-width: 1023px) {
+    /* No telemóvel o cabeçalho não fica preso: devolve o espaço às fotografias. */
+    .cabecalho {
+      position: static;
+    }
+  }
+  .nav-link {
+    padding: 8px 0;
+    font-size: var(--text-mini);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    transition: border-color 160ms;
+  }
+  .nav-link:hover {
+    border-color: var(--color-tinta);
+  }
+  .nav-link[aria-current='page'] {
+    color: var(--color-magenta);
+    border-color: var(--color-magenta);
+  }
+  .icone {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    color: var(--color-tinta);
+    border-radius: 2px;
+  }
+  .icone svg {
+    width: 20px;
+    height: 20px;
+  }
+  .icone:hover {
+    color: var(--color-magenta);
+  }
+
+  /* O anel do logótipo, desenhado uma vez ao abrir. */
+  .anel .t {
+    fill: none;
+    stroke: var(--color-dourado);
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1;
+  }
+  .anel .n {
+    fill: var(--color-dourado);
+    font-family: var(--font-display);
+  }
+  .anel.desenha .t {
+    animation: desenhar 0.9s var(--ease-saida) both;
+  }
+  .anel.desenha .t.pedra {
+    animation-delay: 0.35s;
+  }
+  .anel.desenha .n {
+    animation: surgir 0.5s 0.5s var(--ease-saida) both;
+  }
+
+  /* Janelas (pesquisa e menu) */
+  .janela {
+    margin: auto;
+    width: min(640px, calc(100vw - 32px));
+    max-height: calc(100dvh - 48px);
+    border: 0;
+    border-radius: 2px;
+    color: var(--color-tinta);
+    background: #fff;
+    box-shadow: 0 24px 60px -24px rgba(110, 0, 56, 0.45);
+  }
+  .janela::backdrop {
+    background: rgba(110, 0, 56, 0.35);
+  }
+  .janela[open] {
+    animation: entrar 240ms var(--ease-saida);
+  }
+  .janela--lado {
+    margin: 0 0 0 auto;
+    width: min(380px, 88vw);
+    height: 100dvh;
+    max-height: 100dvh;
+  }
+  .janela--lado[open] {
+    animation: deslizar 260ms var(--ease-saida);
+  }
+
+  /* Carrossel */
+  .carrossel-wrap {
+    padding-block: clamp(20px, 3vw, 40px);
+  }
+  .slide {
+    grid-area: 1 / 1;
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    gap: clamp(24px, 4vw, 64px);
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 700ms var(--ease-saida),
+      visibility 0s 700ms;
+  }
+  .slide.ativo {
+    opacity: 1;
+    visibility: visible;
+    transition:
+      opacity 700ms var(--ease-saida),
+      visibility 0s;
+  }
+  .slide-texto {
+    display: grid;
+    gap: 20px;
+    justify-items: start;
+    padding-block: 24px;
+  }
+  .slide-titulo {
+    font-size: var(--text-hero);
+    max-width: 13ch;
+  }
+  .slide-foto {
+    aspect-ratio: 1;
+    overflow: hidden;
+    background: #fff;
+  }
+  .slide-foto img {
+    transform: scale(1.04);
+    transition: transform 6s linear;
+  }
+  .slide.ativo .slide-foto img {
+    transform: scale(1);
+  }
+  .carrossel-controlo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 18px;
+  }
+  .ponto {
+    position: relative;
+    flex: 1;
+    height: 24px;
+  }
+  .ponto::before,
+  .ponto::after {
+    content: '';
+    position: absolute;
+    inset: 11px 0 auto;
+    height: 2px;
+  }
+  .ponto::before {
+    background: var(--color-rosa-linha);
+  }
+  .ponto::after {
+    background: var(--color-magenta-marca);
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  .ponto.feito::after {
+    transform: scaleX(1);
+  }
+  .ponto.ativo::after {
+    animation: progresso var(--duracao, 6s) linear forwards;
+  }
+  .ponto.ativo.em-pausa::after {
+    animation-play-state: paused;
+  }
+  @media (max-width: 759px) {
+    .carrossel-wrap {
+      padding: 0 0 4px;
+    }
+    .slide {
+      grid-template-columns: 1fr;
+      gap: 0;
+      align-items: start;
+    }
+    .slide-texto {
+      order: 2;
+      padding: 20px 20px 0;
+      gap: 16px;
+    }
+    .carrossel-controlo {
+      padding-inline: 20px;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .slide-foto img {
+      transform: none !important;
+    }
+  }
+
+  /* Rodapé */
+  .rede {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 244, 214, 0.55);
+  }
+  .rede svg {
+    width: 17px;
+    height: 17px;
+  }
+  .rede:hover {
+    border-color: #fff;
+    color: #fff;
+  }
+  .link-rodape:hover {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  /* Álbum dos casais */
+  .foto-casal {
+    margin: 0;
+    background: #fff;
+    padding: 8px 8px 2px;
+    box-shadow: 0 12px 28px -18px rgba(110, 0, 56, 0.4);
+  }
+  .foto-casal:nth-child(odd) {
+    transform: rotate(-0.8deg);
+  }
+  .foto-casal:nth-child(even) {
+    transform: rotate(0.7deg) translateY(10px);
+  }
+  .foto-casal figcaption {
+    font-family: var(--font-nomes);
+    font-size: clamp(1.125rem, 0.9rem + 0.8vw, 1.5rem);
+    color: var(--color-titulo);
+    text-align: center;
+    line-height: 1.6;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /* Filtros da loja */
+  .chip {
+    flex-shrink: 0;
+    min-height: 40px;
+    padding: 0 16px;
+    border: 1px solid var(--color-rosa-linha);
+    border-radius: 2px;
+    font-size: var(--text-label);
+    font-weight: 600;
+    background: #fff;
+    transition:
+      border-color 160ms,
+      color 160ms;
+  }
+  .chip:hover {
+    border-color: var(--color-tinta);
+  }
+  .chip[aria-pressed='true'] {
+    border-color: var(--color-magenta);
+    color: var(--color-magenta);
+    box-shadow: inset 0 0 0 1px var(--color-magenta);
+  }
+  .cor {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 40px;
+    padding: 0 10px 0 6px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    font-size: var(--text-label);
+  }
+  .cor i {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 1px rgba(110, 82, 21, 0.25);
+  }
+  .cor[aria-pressed='true'] {
+    border-color: var(--color-magenta);
+    color: var(--color-magenta);
+  }
+  @media (max-width: 640px) {
+    .cor span {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+    }
+    .cor {
+      padding: 0 8px;
+    }
+  }
+
+}
+
+@keyframes desenhar {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes surgir {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes entrar {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+@keyframes deslizar {
+  from {
+    transform: translateX(100%);
+  }
+}
+@keyframes progresso {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
