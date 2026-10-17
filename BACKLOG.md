@@ -165,16 +165,26 @@ rejeitou a letra Cormorant.
 | 2026-10-17 | UI Pro Max analisa, Impeccable desenha; sem sorteio de direções nem questionários de escolha múltipla. |
 | 2026-10-17 | O site terá um carrossel com eventos promocionais, publicidade e fotos de casais que confiaram na Nobreza (pedido do utilizador). Formato por definir. |
 | 2026-10-17 | Desenho com a skill de grilling (rondas de perguntas com recomendação); textos do site passam pelo /humanizar; nada com ar de IA. |
+| 2026-10-17 | Fotos do catálogo: as quadradas de 1170 px, cortadas sem a faixa magenta; preço, modelo, ref. e peso em texto. |
+| 2026-10-17 | Preço real visível com o peso ("14.400 MZN · 1,7 g"); alianças "o par"; nota "o preço pode variar com o peso final". |
+| 2026-10-17 | Primeira versão: Anéis, Alianças, Colares, Brincos. Relógios ficam para depois. |
+| 2026-10-17 | Público principal: alianças e noivados no centro; o resto a um toque. |
+| 2026-10-17 | Título principal: "O Ouro que mais conecta corações em Moçambique." (slogan real da loja). |
+| 2026-10-17 | Carrossel = destaques ao estilo Instagram (círculos que abrem stories em ecrã inteiro: Promoções, Casais, Atelier…), com pausa, tocar para avançar, sem movimento para quem o desativa. |
+| 2026-10-17 | Promoções com data de fim; saem sozinhas quando acabam. Na demonstração, uma das de 10% como exemplo. |
+| 2026-10-17 | "Como nasce um anel" (vídeo 3D → molde → acabamento → mão) é a secção do atelier na página inicial; o vídeo só toca quando visível. |
+| 2026-10-17 | Ajuste grátis das alianças em ~20 min antes da cerimónia: destaque na categoria Alianças e em cada aliança. |
+| 2026-10-17 | Caridade numa página "Sobre nós", fora da página inicial. |
 
 ## 5. Em discussão (perguntas em aberto)
 
 - [ ] Magenta: reservar a "momentos fortes" (preço, botão de pedido, nomes dos
       casais) ou mantê-lo tão presente como no Instagram?
-- [ ] Relógios entram no site ou só joias?
-- [ ] Ordem da página inicial: peças primeiro e história depois, ou ao contrário?
-- [ ] Topo da página: vídeo curto em ciclo (leve) ou imagem com botão ▶?
-- [ ] Preço: mostrar sempre, "a partir de", ou "sob consulta" (depende do peso)?
-- [ ] Quantas peças entram na primeira versão?
+- [x] Relógios: ficam para depois.
+- [ ] Ordem da página inicial (ronda 2).
+- [x] Topo: o vídeo do atelier vai para "Como nasce um anel", só toca quando visível.
+- [x] Preço: sempre visível, com o peso.
+- [x] Primeira versão: as peças das quatro categorias que temos.
 - [ ] Peças por medida (desenho 3D, gravação, tamanho): secção própria e o que vai
       na mensagem do WhatsApp?
 - [ ] Par de letras.
