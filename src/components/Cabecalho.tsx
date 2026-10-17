@@ -18,7 +18,9 @@ export function Cabecalho() {
   const [menu, setMenu] = useState(false)
   const [pesquisa, setPesquisa] = useState(false)
   const local = useLocation()
-  useEffect(() => setMenu(false), [local.pathname, local.search])
+  useEffect(() => {
+    setMenu(false)
+  }, [local.pathname, local.search])
   const categoria = new URLSearchParams(local.search).get('categoria')
   const atual = (para: string) =>
     para === '/loja?categoria=aliancas' ? local.pathname === '/loja' && categoria === 'aliancas' : para === '/loja' ? local.pathname === '/loja' && categoria !== 'aliancas' : local.pathname === para

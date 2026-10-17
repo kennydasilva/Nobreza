@@ -6,7 +6,9 @@ import { Rodape } from './Rodape'
 export function Layout() {
   const { pathname } = useLocation()
   // Cada página nova começa no topo; os filtros da loja (query) não mexem no scroll.
-  useEffect(() => window.scrollTo(0, 0), [pathname])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
   return (
     <>
       <a className="salto" href="#conteudo">Saltar para o conteúdo</a>
