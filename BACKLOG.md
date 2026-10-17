@@ -10,8 +10,8 @@ Ourivesaria Nobreza. Serve para retomar o trabalho em qualquer sessão nova.
 
 ## Estado atual
 
-- **Fase:** proposta de direção publicada, **à espera de aprovação**. Ainda não se escreve código do site.
-- **Proposta:** https://claude.ai/artifact/ADFn7zEgAFtJocMrALYv4X (privada, do utilizador).
+- **Fase:** protótipo da página inicial publicado, **à espera de aprovação**. Ainda não se escreve código do site.
+- **Protótipo:** https://claude.ai/artifact/ADFn7zEgAFtJocMrALYv4X (versão 2; privado, do utilizador). Fonte em `docs/prototipo/` (modelo + script; as imagens vêm de `imagens/`, fora do git).
 - **Próximo passo:** aprovar ou corrigir a direção (/anti-padrao-ia, Modo B passo 5); depois registar o contrato de direção e construir.
 - **Repositório:** só tem `README.md`, `.gitignore` e este ficheiro. Dois commits
   locais por enviar; o push para o `main` aguarda confirmação.
@@ -251,6 +251,14 @@ O dourado do logótipo (o anel) como fio condutor entre secções.
 - [x] `.gitignore` (2026-10-17).
 
 ## 8. Diário
+
+### 2026-10-17 (protótipo)
+
+- O utilizador recusou a 1.ª proposta: "parece mais um cartaz do que um website", muito texto. Gostou das cores e dos cartões. Referência: o site MADEY (sofisticado, pouco texto).
+- Refeita como protótipo real da página inicial, seguindo a ordem do backlog: cabeçalho (logótipo em anel que se desenha + Alianças · Anéis · Por medida · A loja + pesquisa + WhatsApp) → carrossel automático de 4 slides (6 s, progresso, pausa, arrastar) → "Encontre a sua peça" (mosaico) → Alianças (4 cartões) → banda ameixa do atelier com o vídeo de fabrico → Casais Nobreza (álbum) → Anéis → rodapé ameixa com morada.
+- Nos cartões ficou só nome, material e peso; a referência vai na mensagem do WhatsApp. Botões "Pedir" com contorno magenta (como nos cartões aprovados), não cheios.
+- Nova cor: ameixa #2B1621 como fundo da banda do atelier e do rodapé (papel do azul-marinho no MADEY). Por aprovar.
+- Conflito registado: a anti-slop desaconselha carrossel no topo; ficou por decisão do utilizador, com pausa e progresso.
 
 ### 2026-10-17 (direção)
 
