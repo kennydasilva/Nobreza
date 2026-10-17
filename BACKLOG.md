@@ -10,8 +10,9 @@ Ourivesaria Nobreza. Serve para retomar o trabalho em qualquer sessão nova.
 
 ## Estado atual
 
-- **Fase:** discussão. Ainda **não se escreve código** (pedido explícito, 2026-10-17).
-- **Próximo passo:** fechar as perguntas em aberto (secção 5) e passar ao desenho.
+- **Fase:** proposta de direção publicada, **à espera de aprovação**. Ainda não se escreve código do site.
+- **Proposta:** https://claude.ai/artifact/ADFn7zEgAFtJocMrALYv4X (privada, do utilizador).
+- **Próximo passo:** aprovar ou corrigir a direção (/anti-padrao-ia, Modo B passo 5); depois registar o contrato de direção e construir.
 - **Repositório:** só tem `README.md`, `.gitignore` e este ficheiro. Dois commits
   locais por enviar; o push para o `main` aguarda confirmação.
 
@@ -250,6 +251,16 @@ O dourado do logótipo (o anel) como fio condutor entre secções.
 - [x] `.gitignore` (2026-10-17).
 
 ## 8. Diário
+
+### 2026-10-17 (direção)
+
+- Proposta de direção feita com /anti-padrao-ia (Modo B, passo 4) e verificada com a lista 13 da anti-slop.
+- Tese: "Uma montra branca e luminosa, como a loja em Matola, onde cada peça traz a sua etiqueta e cada casal o seu nome."
+- Eixos: densidade média · quente · formalidade média (você) · energia calma · pouco ornamento · contraste alto nos títulos. Ansiedade do cliente: confiança.
+- Cores: branco #FFFFFF, rosa-pó #FCF0F5, magenta de ação #D6006F (5,1:1), magenta da marca #FE0084 só em áreas grandes (3,8:1), dourado #C9AD51 só em linhas/anel, tinta #2B1621, tinta suave #6B5260.
+- Três sinais: o anel que se desenha, a etiqueta de preço (forma das etiquetas da loja), o álbum dos casais.
+- Proposto renomear "Sobre nós" para "A loja".
+- Cantos 2 px, um só conjunto de ícones, sem cartões com caixa/sombra.
 
 ### 2026-10-17
 
