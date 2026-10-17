@@ -127,6 +127,14 @@ rejeitou a letra Cormorant.
 
 ## 3. Análises
 
+### Papéis das skills de design
+
+- **UI Pro Max:** inspiração e análise (paletas, letras, padrões de página, regras de UX).
+- **Impeccable:** desenho e regras de UI/intuitividade (craft-floor, `impeccable detect`).
+- **anti-slop-design** (`.claude/skills/anti-slop-design`): filtro contra tudo o que soa a IA; correr `references/13-pre-emit-checklist.md` antes de entregar.
+- **grilling:** decisões em rondas com recomendação.
+- **/humanizar:** todos os textos do site.
+
 ### UI Pro Max (análise e inspiração)
 
 - Padrão de página: **história + prova social** (casamentos/joias): mostrar quem
@@ -182,6 +190,15 @@ rejeitou a letra Cormorant.
 | 2026-10-17 | Botões "Pedir pelo WhatsApp" em magenta com o símbolo do WhatsApp. |
 | 2026-10-17 | Mensagem do WhatsApp: modelo, ref., preço, link; sem pedir tamanho no site. Número WhatsApp 86 207 0869. |
 | 2026-10-17 | Moeda escrita "MZN", como nas etiquetas da loja. |
+| 2026-10-17 | Cores: fundo branco, secções em rosa muito claro; magenta só em preços e botões de pedido; dourado no logótipo e pequenos detalhes. |
+| 2026-10-17 | Letras: Bodoni Moda (títulos) + Jost (texto) + Great Vibes só nos nomes dos casais. Mostrar amostra com acentos antes de fechar. |
+| 2026-10-17 | Logótipo redesenhado em SVG igual ao original (o ficheiro tem 150 px); trocar pelos originais quando a loja aceitar. |
+| 2026-10-17 | Animação: o anel do logótipo desenha-se uma vez ao abrir o site (< 1 s), sem ecrã de carregamento. |
+| 2026-10-17 | Cartão de peça: tocar na foto abre a página da peça; botão magenta "Pedir" abre o WhatsApp. |
+| 2026-10-17 | Página da peça: foto grande (+ vídeo quando houver), nome, preço com peso, cor, ref., "Pedir pelo WhatsApp"; alianças com bloco do ajuste grátis; "Peças parecidas". |
+| 2026-10-17 | Página "Peça por medida": vídeo 3D → mão, 4 passos, botão "Contar a minha ideia" → WhatsApp. |
+| 2026-10-17 | Cabeçalho: logótipo à esquerda; pesquisa, WhatsApp e menu à direita; sem botão de WhatsApp a flutuar. |
+| 2026-10-17 | Instalada a skill anti-slop-design em `.claude/skills/` (só texto, MIT) para garantir que nada tem ar de IA. |
 
 ## 5. Em discussão (perguntas em aberto)
 
