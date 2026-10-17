@@ -1,0 +1,23 @@
+# Dependências e build
+node_modules
+dist
+*.tsbuildinfo
+
+# Variáveis de ambiente e ficheiros locais
+.env
+.env.*
+*.local
+
+# Vercel
+.vercel
+
+# Impeccable: configuração local desta máquina
+.impeccable/config.local.json
+
+# Sistema e editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.log
