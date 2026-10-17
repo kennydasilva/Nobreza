@@ -170,7 +170,7 @@ rejeitou a letra Cormorant.
 | 2026-10-17 | Primeira versão: Anéis, Alianças, Colares, Brincos. Relógios ficam para depois. |
 | 2026-10-17 | Público principal: alianças e noivados no centro; o resto a um toque. |
 | 2026-10-17 | Título principal: "O Ouro que mais conecta corações em Moçambique." (slogan real da loja). |
-| 2026-10-17 | Carrossel = destaques ao estilo Instagram (círculos que abrem stories em ecrã inteiro: Promoções, Casais, Atelier…), com pausa, tocar para avançar, sem movimento para quem o desativa. |
+| 2026-10-17 | Carrossel clássico que **troca sozinho de imagem** de tantos em tantos segundos (o utilizador corrigiu a ideia dos destaques ao estilo Instagram). Conteúdo: promoções, publicidade, casais. Com pontos/setas, pausa ao tocar ou passar o rato, e parado para quem desativa animações. |
 | 2026-10-17 | Promoções com data de fim; saem sozinhas quando acabam. Na demonstração, uma das de 10% como exemplo. |
 | 2026-10-17 | "Como nasce um anel" (vídeo 3D → molde → acabamento → mão) é a secção do atelier na página inicial; o vídeo só toca quando visível. |
 | 2026-10-17 | Ajuste grátis das alianças em ~20 min antes da cerimónia: destaque na categoria Alianças e em cada aliança. |
