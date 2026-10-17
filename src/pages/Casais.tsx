@@ -13,7 +13,7 @@ export default function Casais() {
         <div className="mt-10 grid grid-cols-2 gap-x-[clamp(12px,2vw,28px)] gap-y-8 md:grid-cols-3 lg:grid-cols-4">
           {CASAIS.map((c, i) => (
             <figure key={c.foto} className="foto-casal">
-              <Foto pasta="casais" nome={c.foto} alt={c.nomes} sizes="(min-width: 1024px) 280px, (min-width: 760px) 30vw, 46vw" prioridade={i < 4} className="aspect-4/5 h-auto w-full object-cover" />
+              <Foto pasta="casais" nome={c.foto} alt={c.nomes} largura={800} altura={1000} sizes="(min-width: 1024px) 280px, (min-width: 760px) 30vw, 46vw" prioridade={i < 4} className="aspect-4/5 h-auto w-full object-cover" />
               <figcaption>{c.nomes}</figcaption>
             </figure>
           ))}

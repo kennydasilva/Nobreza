@@ -17,7 +17,7 @@ function Mosaico() {
   const pequena = (para: string, nome: string, pasta: 'pecas' | 'site', foto: string, classe: string, posicao?: string) => (
     <Link to={para} className={`zoom grid gap-2.5 ${classe}`}>
       <div className="overflow-hidden bg-rosa">
-        <Foto pasta={pasta} nome={foto} alt="" sizes="(min-width: 760px) 25vw, 50vw" className="h-full w-full object-cover" style={posicao ? { objectPosition: posicao } : undefined} />
+        <Foto pasta={pasta} nome={foto} alt="" largura={1200} altura={classe.includes('2/1') ? 600 : 1200} sizes="(min-width: 760px) 25vw, 50vw" className="h-full w-full object-cover" style={posicao ? { objectPosition: posicao } : undefined} />
       </div>
       <span className="flex items-center justify-between font-display text-xl text-titulo">
         {nome} <Seta className="size-4 text-tinta-suave" />
@@ -27,7 +27,7 @@ function Mosaico() {
   return (
     <div className="grid gap-4 md:grid-cols-[1.25fr_1fr]">
       <Link to="/loja?categoria=aliancas" className="zoom relative block overflow-hidden">
-        <Foto pasta="pecas" nome="ovais-ai-n0031" alt="" sizes="(min-width: 760px) 55vw, 100vw" className="aspect-4/5 h-full w-full object-cover md:aspect-auto md:min-h-[420px]" />
+        <Foto pasta="pecas" nome="ovais-ai-n0031" alt="" largura={1000} altura={1250} sizes="(min-width: 760px) 55vw, 100vw" className="aspect-4/5 h-full w-full object-cover md:aspect-auto md:min-h-[420px]" />
         <div className="absolute inset-x-0 bottom-0 grid gap-2 bg-linear-to-t from-[rgba(120,0,62,0.72)] to-transparent p-[clamp(20px,3vw,36px)] text-white">
           <h3 className="text-[clamp(1.75rem,1.3rem+1.6vw,2.5rem)] text-white">Alianças</h3>
           <p className="max-w-[34ch] text-label text-[#f7e9f0]">Ajustamos de graça antes da cerimónia, em cerca de 20 minutos.</p>
@@ -110,7 +110,7 @@ export default function Inicio() {
           <div className="grid grid-cols-2 gap-[clamp(12px,2vw,28px)] md:grid-cols-4">
             {CASAIS.slice(0, 4).map((c) => (
               <figure key={c.foto} className="foto-casal">
-                <Foto pasta="casais" nome={c.foto} alt={c.nomes} sizes="(min-width: 760px) 280px, 46vw" className="aspect-4/5 h-auto w-full object-cover" />
+                <Foto pasta="casais" nome={c.foto} alt={c.nomes} largura={800} altura={1000} sizes="(min-width: 760px) 280px, 46vw" className="aspect-4/5 h-auto w-full object-cover" />
                 <figcaption>{c.nomes}</figcaption>
               </figure>
             ))}

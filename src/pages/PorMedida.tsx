@@ -39,7 +39,7 @@ export default function PorMedida() {
           <ol className="grid grid-cols-2 gap-x-4 gap-y-8 md:grid-cols-4">
             {PASSOS.map((p, i) => (
               <li key={p.titulo} className="grid content-start gap-2.5">
-                <Foto pasta="site" nome={p.foto} alt={p.titulo} sizes="(min-width: 760px) 25vw, 50vw" className="aspect-3/4 h-auto w-full object-cover" />
+                <Foto pasta="site" nome={p.foto} alt={p.titulo} largura={900} altura={1200} sizes="(min-width: 760px) 25vw, 50vw" className="aspect-3/4 h-auto w-full object-cover" />
                 <h3 className="text-xl"><span className="text-dourado">{i + 1}.</span> {p.titulo}</h3>
                 <p className="text-label text-tinta-suave">{p.texto}</p>
               </li>

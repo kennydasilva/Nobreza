@@ -28,7 +28,7 @@ export default function ALoja() {
             <a className="pedir min-h-12 px-5" href={config.mapa} target="_blank" rel="noopener"><Mapa /> Abrir no mapa</a>
           </div>
         </div>
-        <Foto pasta="site" nome="fachada" alt="A fachada da Ourivesaria Nobreza, com o letreiro" sizes="(min-width: 760px) 50vw, 100vw" prioridade className="aspect-4/5 h-auto w-full object-cover" />
+        <Foto pasta="site" nome="fachada" alt="A fachada da Ourivesaria Nobreza, com o letreiro" largura={800} altura={1000} sizes="(min-width: 760px) 50vw, 100vw" prioridade className="aspect-4/5 h-auto w-full object-cover" />
       </section>
 
       <section className="escuro">
@@ -59,9 +59,9 @@ export default function ALoja() {
         <div className="wrap">
           <div className="topo-seccao"><h2>Na comunidade</h2></div>
           <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
-            <Foto pasta="site" nome="caridade" alt="A equipa da Nobreza numa ação de solidariedade" sizes="(min-width: 760px) 33vw, 50vw" className="aspect-3/4 h-auto w-full object-cover" />
-            <Foto pasta="site" nome="caridade-1" alt="A equipa da Nobreza a distribuir refeições" sizes="(min-width: 760px) 33vw, 50vw" className="aspect-3/4 h-auto w-full object-cover" />
-            <Foto pasta="site" nome="caridade-2" alt="Distribuição de refeições pela equipa da Nobreza" sizes="(min-width: 760px) 33vw, 50vw" className="col-span-2 aspect-3/2 h-auto w-full object-cover md:col-span-1 md:aspect-3/4" />
+            <Foto pasta="site" nome="caridade" alt="A equipa da Nobreza numa ação de solidariedade" largura={900} altura={1200} sizes="(min-width: 760px) 33vw, 50vw" className="aspect-3/4 h-auto w-full object-cover" />
+            <Foto pasta="site" nome="caridade-1" alt="A equipa da Nobreza a distribuir refeições" largura={900} altura={1200} sizes="(min-width: 760px) 33vw, 50vw" className="aspect-3/4 h-auto w-full object-cover" />
+            <Foto pasta="site" nome="caridade-2" alt="Distribuição de refeições pela equipa da Nobreza" largura={1200} altura={800} sizes="(min-width: 760px) 33vw, 50vw" className="col-span-2 aspect-3/2 h-auto w-full object-cover md:col-span-1 md:aspect-3/4" />
           </div>
           <p className="mt-5 text-label text-tinta-suave">Da série "Caridade" das publicações da loja.</p>
         </div>
