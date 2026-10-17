@@ -3,7 +3,7 @@ import { config, whatsappVisivel } from '../config'
 import { CATEGORIAS } from '../data/categorias'
 import { MENSAGEM_GERAL, whatsapp } from '../lib/formato'
 import { Facebook, Instagram, TikTok } from './Icones'
-import logotipo from '../../identidadevisual/369543046_1936883356681898_8039652608799551590_n.jpg?url'
+import logotipo from '../assets/logotipo.jpg?url'
 
 export function Rodape() {
   return (
